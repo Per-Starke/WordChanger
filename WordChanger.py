@@ -6,7 +6,7 @@ def wordsToList (string_to_change):
     # print("Lenght of String: ", len(string_to_change))
     for symbol in string_to_change :
         i+=1
-        if symbol == " " or symbol == "." :
+        if symbol == " " or symbol == "." or symbol ==":" or symbol == ","  :
             single_word = string_to_change[x:i-1]
             list_with_words.append(single_word)
             single_word = ""
@@ -26,28 +26,28 @@ dict_of_words_to_change = {"ironisch" : "erotisch", "Ironisch":"Erotisch", "aggr
 def changeWords():
     counter = 0
     for word in list_with_words:
-        # print (word)
+        print (word)
         if word in dict_of_words_to_change:
             print(word, " : ", dict_of_words_to_change[word])
             list_with_words[counter] = dict_of_words_to_change[word]
 
 
-        # list_with_words[counter][0:len(list_with_words[counter])-1]
 
-        elif word in list_with_words[counter][0:len(list_with_words[counter])-1]:
-
-            list_with_words[counter] = list_with_words[counter][0:len(list_with_words[counter])-1]
-
-        elif word in list_with_words[counter][0:len(list_with_words[counter])-2]:
-
-            list_with_words[counter] = list_with_words[counter][0:len(list_with_words[counter])-2]
+        #
+        # elif word in list_with_words[counter][0:len(list_with_words[counter])-1]:
+        #
+        #     list_with_words[counter] = list_with_words[counter][0:len(list_with_words[counter])-1]
+        #
+        # elif word in list_with_words[counter][0:len(list_with_words[counter])-2]:
+        #
+            # list_with_words[counter] = list_with_words[counter][0:len(list_with_words[counter])-2]
 
         counter = counter + 1
     return " ".join(list_with_words)
 
 
 
-list_with_words = (wordsToList("Ironisch: hallo ich bin die aggressive ironische XY.")) # unbedingt "." oder " " am Ende des Satzes!
+list_with_words = (wordsToList("Ironisch: hallo ich bin die aggressiv ironisch XY.")) # unbedingt "." oder " " am Ende des Satzes!
 print(list_with_words)
 print ("\n")
 print(changeWords())
