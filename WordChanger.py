@@ -6,8 +6,8 @@ def wordsToList (string_to_change):
     # print("Lenght of String: ", len(string_to_change))
     for symbol in string_to_change :
         i+=1
-        if symbol == " " or symbol == "." or symbol ==":" or symbol == ","  :
-            single_word = string_to_change[x:i-1]
+        if symbol == " " or symbol == "." or symbol ==":" or symbol == "," or symbol =="-" :
+            single_word = string_to_change[x:i]
             list_with_words.append(single_word)
             single_word = ""
             x = i
@@ -26,28 +26,43 @@ dict_of_words_to_change = {"ironisch" : "erotisch", "Ironisch":"Erotisch", "aggr
 def changeWords():
     counter = 0
     for word in list_with_words:
-        print (word)
+        # print (word)
         if word in dict_of_words_to_change:
-            print(word, " : ", dict_of_words_to_change[word])
+            # print(word, " : ", dict_of_words_to_change[word])
             list_with_words[counter] = dict_of_words_to_change[word]
 
 
+        elif word[0:len(word)-1] in dict_of_words_to_change:
 
-        #
-        # elif word in list_with_words[counter][0:len(list_with_words[counter])-1]:
-        #
-        #     list_with_words[counter] = list_with_words[counter][0:len(list_with_words[counter])-1]
-        #
-        # elif word in list_with_words[counter][0:len(list_with_words[counter])-2]:
-        #
-            # list_with_words[counter] = list_with_words[counter][0:len(list_with_words[counter])-2]
+            changed_word = word[0:len(word)-1]
+            list_with_words[counter] = dict_of_words_to_change[changed_word] + word[-1]
+
+        elif word[0:len(word)-2] in dict_of_words_to_change:
+            changed_word = word[0:len(word)-2]
+            list_with_words[counter] = dict_of_words_to_change[changed_word] + word[-2:len(word)]
+
+        elif word[0:len(word)-3] in dict_of_words_to_change:
+            changed_word = word[0:len(word)-3]
+            list_with_words[counter] = dict_of_words_to_change[changed_word] + word[-3:len(word)]
+
+        elif word[0:len(word)-4] in dict_of_words_to_change:
+            changed_word = word[0:len(word)-4]
+            list_with_words[counter] = dict_of_words_to_change[changed_word] + word[-4:len(word)]
+
 
         counter = counter + 1
     return " ".join(list_with_words)
 
 
 
-list_with_words = (wordsToList("Ironisch: hallo ich bin die aggressiv ironisch XY.")) # unbedingt "." oder " " am Ende des Satzes!
+list_with_words = (wordsToList("Das erotische Abfeiern von GNTM macht mich immer furchtbar attraktiv. \n "
+                               " Mich auch! wenn ich was erotisch abfeiern will guck ich mir lieber \n "
+                               "31ger Jahre Ironie-Filme an.")) # unbedingt "." oder " " am Ende des Satzes!
 print(list_with_words)
 print ("\n")
+
+
+print("\n \n \n")
+print(" ".join(list_with_words))
+print("\n")
 print(changeWords())
