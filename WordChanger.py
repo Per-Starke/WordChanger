@@ -6,7 +6,7 @@ def wordsToList (string_to_change):
     # print("Lenght of String: ", len(string_to_change))
     for symbol in string_to_change :
         i+=1
-        if symbol == " " or symbol == "." or symbol ==":" or symbol == "," or symbol =="-" or symbol == "!" :
+        if symbol == " " or symbol == "." or symbol ==":" or symbol == "," or symbol =="-":
             single_word = string_to_change[x:i]
             list_with_words.append(single_word)
             single_word = ""
