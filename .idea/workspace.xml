@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a07f6cc-94e7-4c2e-a10f-d5792777689b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WordChanger.py" afterPath="$PROJECT_DIR$/WordChanger.py" />
-    </list>
+    <list default="true" id="0a07f6cc-94e7-4c2e-a10f-d5792777689b" name="Default" comment="" />
     <ignored path="WordChanger.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
