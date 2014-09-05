@@ -57,7 +57,7 @@ def changeWords():
 
 list_with_words = (wordsToList("Das erotische Abfeiern von GNTM macht mich immer furchtbar attraktiv. \n "
                                " Mich auch! wenn ich was erotisch abfeiern will guck ich mir lieber \n "
-                               "31ger Jahre Ironie-Filme an.")) # unbedingt "." oder " " am Ende des Satzes!
+                               "31ger Jahre Ironie-Filme an. Das ist ironischer.")) # unbedingt "." oder " " am Ende des Satzes!
 print(list_with_words)
 print ("\n")
 
