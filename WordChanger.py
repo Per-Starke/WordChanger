@@ -6,7 +6,7 @@ def wordsToList (string_to_change):
     # print("Lenght of String: ", len(string_to_change))
     for symbol in string_to_change :
         i+=1
-        if symbol == " " or symbol == "." or symbol ==":" or symbol == "," or symbol =="-" :
+        if symbol == " " or symbol == "." or symbol ==":" or symbol == "," or symbol =="-" or symbol == "!" :
             single_word = string_to_change[x:i]
             list_with_words.append(single_word)
             single_word = ""
@@ -57,7 +57,7 @@ def changeWords():
 
 list_with_words = (wordsToList("Das erotische Abfeiern von GNTM macht mich immer furchtbar attraktiv. \n "
                                " Mich auch! wenn ich was erotisch abfeiern will guck ich mir lieber \n "
-                               "31ger Jahre Ironie-Filme an. Das ist ironischer.")) # unbedingt "." oder " " am Ende des Satzes!
+                               "31ger Jahre Ironie-Filme an. Das ist ironischer!")) # unbedingt "." oder " " am Ende des Satzes!
 print(list_with_words)
 print ("\n")
 

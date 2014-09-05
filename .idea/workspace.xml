@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a07f6cc-94e7-4c2e-a10f-d5792777689b" name="Default" comment="" />
+    <list default="true" id="0a07f6cc-94e7-4c2e-a10f-d5792777689b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WordChanger.py" afterPath="$PROJECT_DIR$/WordChanger.py" />
+    </list>
     <ignored path="WordChanger.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +28,8 @@
       <file leaf-file-name="WordChanger.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WordChanger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.17234468" vertical-offset="596" max-vertical-offset="1095">
-              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.24048096" vertical-offset="0" max-vertical-offset="1095">
+              <caret line="8" column="107" selection-start-line="8" selection-start-column="107" selection-end-line="8" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -332,8 +334,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/WordChanger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.17234468" vertical-offset="596" max-vertical-offset="1095">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.24048096" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="8" column="107" selection-start-line="8" selection-start-column="107" selection-end-line="8" selection-end-column="107" />
           <folding />
         </state>
       </provider>
