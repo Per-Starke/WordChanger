@@ -1,3 +1,11 @@
-.idea/
 workspace.xml
+
+# Intellij
+.idea/
+*.iml
+*.iws
+*.xml
+
+# Mac
+.DS_Store
 
