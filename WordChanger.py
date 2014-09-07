@@ -55,7 +55,7 @@ def changeWords():
 
 
 
-list_with_words = (wordsToList("")) # unbedingt "." oder " " am Ende des Satzes!
+list_with_words = (wordsToList("Das ironische Ministerium des Bundestages.")) # unbedingt "." oder " " am Ende des Satzes!
 print(list_with_words)
 print ("\n")
 
