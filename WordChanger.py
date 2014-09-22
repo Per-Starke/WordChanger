@@ -16,7 +16,7 @@ def wordsToList (string_to_change):
 
 words = ["ironisch" , "erotisch", "Ironisch", "Erotisch", "aggressiv", "attraktiv","Aggressiv", "Atrakktiv",
                            "mystisch", "ministerisch", "Mystisch", "Ministerisch", "Ironie", "Erotik", "Aggression", "Attraktivität",
-                           "Ministerium", "Mysterium"]
+                           "Ministerium", "Mysterium" "Bundestag", "Schützenverein", "Problem", "Ekzem"]
 
 print(len(words))
 dict_of_words_to_change = {"ironisch" : "erotisch", "Ironisch":"Erotisch", "aggressiv":"attraktiv","Aggressiv":"Atrakktiv",
@@ -24,7 +24,9 @@ dict_of_words_to_change = {"ironisch" : "erotisch", "Ironisch":"Erotisch", "aggr
                            "Ministerium":"Mysterium",
                            "erotisch":"ironisch", "Erotisch":"Ironisch", "attraktiv":"aggressiv", "Attraktiv": "Aggressiv",
                            "ministerisch":"mysterisch", "Ministerisch":"Mysterisch", "Erotik":"Ironie", "Attraktivität":"Aggression",
-                           "Mysterium":"Ministerium", "Bundestag" : "Schützenverein"}
+                           "Mysterium":"Ministerium", "Bundestag" : "Schützenverein", "Schützenverein":"Bundestag", "Problem":"Ekzem",
+                           "Ekzem":"Problem"}
+print(len(dict_of_words_to_change))
 
 # word_to_change_to = ""
 
