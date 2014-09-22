@@ -14,14 +14,11 @@ def wordsToList (string_to_change):
 
     return list_with_words
 
-Words = ["ironisch" , "erotisch", "Ironisch", "Erotisch", "aggressiv", "attraktiv","Aggressiv", "Atrakktiv",
+words = ["ironisch" , "erotisch", "Ironisch", "Erotisch", "aggressiv", "attraktiv","Aggressiv", "Atrakktiv",
                            "mystisch", "ministerisch", "Mystisch", "Ministerisch", "Ironie", "Erotik", "Aggression", "Attraktivität",
-                           "Ministerium", "Mysterium",
-                           "erotisch", "ironisch", "Erotisch", "Ironisch", "attraktiv","aggressiv", "Attraktiv","Aggressiv",
-                           "ministerisch", "mysterisch", "Ministerisch", "Mysterisch", "Erotik", "Ironie", "Attraktivität","Aggression",
-                           "Mysterium", "Ministerium", "Bundestag" ,"Schützenverein"]
+                           "Ministerium", "Mysterium"]
 
-
+print(len(words))
 dict_of_words_to_change = {"ironisch" : "erotisch", "Ironisch":"Erotisch", "aggressiv":"attraktiv","Aggressiv":"Atrakktiv",
                            "mystisch":"ministerisch", "Mystisch":"Ministerisch", "Ironie":"Erotik", "Aggression":"Attraktivität",
                            "Ministerium":"Mysterium",
