@@ -14,11 +14,11 @@
 #
 #     return list_with_words
 
-words = ["ironisch" , "erotisch", "Ironisch", "Erotisch", "aggressiv", "attraktiv","Aggressiv", "Attrakktiv",
+words = ["ironisch", "erotisch", "Ironisch", "Erotisch", "aggressiv", "attraktiv","Aggressiv", "Attrakktiv",
                            "mystisch", "ministerisch", "Mystisch", "Ministerisch", "Ironie", "Erotik", "Aggression", "Attraktivität",
                            "Ministerium", "Mysterium", "Bundestag", "Schützenverein", "Problem", "Ekzem"]
 
-print(len(words))
+# print(len(words))
 dict_of_words_to_change = {"ironisch" : "erotisch", "Ironisch":"Erotisch", "aggressiv":"attraktiv","Aggressiv":"Atrakktiv",
                            "mystisch":"ministerisch", "Mystisch":"Ministerisch", "Ironie":"Erotik", "Aggression":"Attraktivität",
                            "Ministerium":"Mysterium",
@@ -32,7 +32,8 @@ dict_of_words_to_change = {"ironisch" : "erotisch", "Ironisch":"Erotisch", "aggr
 
 
 
-def changeWordsWithList(string_that_changes):
+def changeWords(string_that_changes):
+    newStr = string_that_changes
     for word in words:
         if word in string_that_changes:
             print("\n")
@@ -40,9 +41,14 @@ def changeWordsWithList(string_that_changes):
             print("\n")
             print(word)
             print(dict_of_words_to_change[word])
-            
-            string_that_changes.replace(word, dict_of_words_to_change[word])
-    return string_that_changes
+            newWord = dict_of_words_to_change[word]
+            print("word = ", word)
+            print("newWord = ", newWord)
+            print("newStr = ", newStr)
+            newStr = newStr.replace(word, newWord)
+            print( newStr )
+
+    return newStr
 
 
 string_to_change = "Das ironische Ministerium des Bundestages."     # unbedingt "." oder " " am Ende des Satzes!
@@ -51,11 +57,11 @@ string_to_change = "Das ironische Ministerium des Bundestages."     # unbedingt 
 # print ("\n")
 #
 
-print("\n \n")
+# print("\n \n")
 # print(" ".join(list_with_words))
 # print("\n")
 # print(changeWords())
 
 
-changed_string = changeWordsWithList(string_to_change)
+changed_string = changeWords(string_to_change)
 print(changed_string)
