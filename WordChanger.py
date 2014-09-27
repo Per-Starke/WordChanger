@@ -6,6 +6,8 @@ words = ["ironisch", "erotisch", "Ironisch", "Erotisch", "aggressiv", "attraktiv
                            "Ministerium", "Mysterium", "Bundestag", "Schützenverein", "Problem", "Ekzem"]  # List of Word to changr to scan.
 
 
+# CAPITAL Letters possible?
+
 dict_of_words = {"ironisch" : "erotisch", "Ironisch":"Erotisch", "aggressiv":"attraktiv","Aggressiv":"Atrakktiv",
                            "mystisch":"ministerisch", "Mystisch":"Ministerisch", "Ironie":"Erotik", "Aggression":"Attraktivität",
                            "Ministerium":"Mysterium",
@@ -16,7 +18,7 @@ dict_of_words = {"ironisch" : "erotisch", "Ironisch":"Erotisch", "aggressiv":"at
 
 
 def changeWords(string_that_changes):
-    newStr = string_that_changes  # assignment
+    newStr = string_that_changes #.upper(), # assignment
     for word in words:            # scans the list words
         if word in string_that_changes: # if the word is in the text
             newWord = dict_of_words[word]
@@ -24,9 +26,13 @@ def changeWords(string_that_changes):
     return newStr
 
 
-string_to_change = "Des ironischen Ministeriums des Bundestages"  
+string_to_change = "Des ironischen  ErotikMinisteriums des Bundestages"
 
 
 changed_string = changeWords(string_to_change)
 print (string_to_change)
 print (changed_string)
+
+
+
+# List that scans for nouns and sentence-beginns??
